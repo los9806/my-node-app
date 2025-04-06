@@ -5,14 +5,12 @@ phases:
     runtime-versions:
       nodejs: 14
     commands:
-      - echo Installing dependencies...
+      - echo "Installing dependencies..."
       - npm install
   build:
     commands:
-      - echo Running tests (if any)...
-      - echo Zipping application...
+      - echo "Running tests (if any)..."
       - zip -r my-node-app.zip .
 artifacts:
   files:
     - my-node-app.zip
-    
